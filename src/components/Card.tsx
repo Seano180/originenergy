@@ -141,10 +141,15 @@ const EnergyAccountsPage = () => {
                   Account Balance:{" "}
                   <span
                     style={{
-                      color: charge && charge.amount < 0 ? "red" : "green",
+                      color:
+                        charge && Number(charge.amount) < 0
+                          ? "red"
+                          : charge && Number(charge.amount) > 0
+                          ? "green"
+                          : "grey",
                     }}
                   >
-                    ${charge ? charge.amount.toFixed(2) : "0.00"}
+                    ${charge ? Number(charge.amount).toFixed(0) : "0"}
                   </span>
                 </Typography>
 
