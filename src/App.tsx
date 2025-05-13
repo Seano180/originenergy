@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Card from "./components/Card";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="App"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        gap: "2rem",
+        padding: "2rem",
+        minHeight: "100vh",
+        background: "linear-gradient(135deg, #fdf9f6, #fefbf4, #ffffff)",
+        color: "#fff",
+        fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+        textAlign: "center",
+      }}
+    >
+      <h1
+        style={{
+          color: "black",
+          fontSize: "2.5rem",
+          margin: 0,
+          textShadow: "1px 1px 4px rgba(0,0,0,0.3)",
+        }}
+      >
+        Energy Dashboard
+      </h1>
+      <Card />
     </div>
   );
 }
