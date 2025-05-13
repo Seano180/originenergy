@@ -84,7 +84,15 @@ const EnergyAccountsPage = () => {
 
         return (
           <div key={account.id}>
-            <Card style={{ minWidth: 600, maxWidth: 600, marginBottom: 3 }}>
+            <Card
+              style={{
+                width: "100%",
+                maxWidth: 600,
+                marginBottom: 3,
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            >
               <CardHeader
                 avatar={
                   <Avatar
